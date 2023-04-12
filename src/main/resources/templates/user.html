@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<style>
+  body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  }
+
+  header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #212121;
+  }
+
+  h1 {
+  color: #ffffff;
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  }
+
+  .tokens {
+  font-size: 18px;
+  font-weight: bold;
+  color: green;
+  }
+
+  .badge-container {
+  background-color: #1f1f1f;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  }
+
+  .badge {
+  background-color: #212121;
+  color: #ffffff;
+  width: calc(13% - 10px);
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  }
+
+  .badge img {
+  width: 100%;
+  }
+
+  .challenge-container {
+  background-color: #1f1f1f;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  }
+
+  .challenge {
+  background-color: #212121;
+  color: #ffffff;
+  width: calc(25.33% - 10px);
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  }
+
+  .challenge h2 {
+  background-color: #555555;
+  color: #ffffff;
+  margin-top: 0;
+  }
+
+  .challenge p {
+  margin: 10px 0 0;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Hello, ${username}</h1>
+  <div class="tokens">${number} tokens</div>
+</header>
+<header>
+  <h2>Badges</h2>
+</header>
+<div class="badge-container">
+  <div class="badge">
+    <img src="https://via.placeholder.com/50" alt="${badge1.name}">
+    <p>${badge1.name}</p>
+  </div>
+  <div class="badge">
+    <img src="https://via.placeholder.com/50" alt="${badge2.name}">
+    <p>${badge2.name}</p>
+  </div>
+  <div class="badge">
+    <img src="https://via.placeholder.com/50" alt="${badge3.name}">
+    <p>${badge3.name}</p>
+  </div>
+  <div class="badge">
+    <img src="https://via.placeholder.com/50" alt="${badge4.name}">
+    <p>${badge4.name}</p>
+  </div>
+  <div class="badge">
+    <img src="https://via.placeholder.com/50" alt="${badge5.name}">
+    <p>${badge5.name}</p>
+  </div>
+  <div class="badge">
+    <img src="https://via.placeholder.com/50" alt="${badge6.name}">
+    <p>${badge6.name}</p>
+  </div>
+  <p> <br> <a href="/{id}/badges" style="color: white;">Your badges</a></p>
+</div>
+<header>
+  <h2>Ongoing Challenges</h2>
+
+</header>
+<div class="challenge-container">
+  <div class="challenge">
+    <h3>${c1.name}</h3>
+    <p>Description of Challenge 1</p>
+    <div>Progress: 50%</div>
+  </div>
+  <div class="challenge">
+    <h3>${c2.name}</h3>
+    <p>Description of Challenge 2</p>
+    <div>Progress: 75%</div>
+  </div>
+  <div class="challenge">
+    <h3>${c3.name}</h3>
+    <p>Description of Challenge 3</p>
+    <div>Progress: 20%</div>
+  </div>
+  <div class="challenge">
+    <h3>${c4.name}</h3>
+    <p>Description of Challenge 4</p>
+    <div>Progress: 40%</div>
+  </div>
+  <div class="challenge">
+    <h3>${c5.name}</h3>
+    <p>Description of Challenge 5</p>
+    <div>Progress: 90%</div>
+  </div>
+  <div class="challenge">
+    <h3>${c6.name}</h3>
+    <p>Description of Challenge 6</p>
+    <div>Progress: 60%</div>
+  </div>
+  <p> <br> <a href="/{id}/challenges" style="color: white;">All your ongoing challenges</a></p>
+</div>
+</body>
+</html>

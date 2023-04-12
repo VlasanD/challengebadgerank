@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background-color: #111;
+            color: #fff;
+        }
+
+        .ranking-container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .ranking-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 auto;
+            max-width: 400px;
+        }
+
+        li {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #666;
+            border-radius: 5px;
+            background-color: #222;
+        }
+
+        li:hover {
+            background-color: #333;
+        }
+
+        .dark-theme {
+            background-color: #333;
+            border: 1px solid #666;
+        }
+    </style>
+</head>
+<body>
+<div class="ranking-container dark-theme">
+    <h2>Top 15 Ranking</h2>
+    <ol class="ranking-list">
+        <li id="player-1">Loading...</li>
+        <li id="player-2">Loading...</li>
+        <li id="player-3">Loading...</li>
+        <li id="player-4">Loading...</li>
+        <li id="player-5">Loading...</li>
+        <li id="player-6">Loading...</li>
+        <li id="player-7">Loading...</li>
+        <li id="player-8">Loading...</li>
+        <li id="player-9">Loading...</li>
+        <li id="player-10">Loading...</li>
+        <li id="player-11">Loading...</li>
+        <li id="player-12">Loading...</li>
+        <li id="player-13">Loading...</li>
+        <li id="player-14">Loading...</li>
+        <li id="player-15">Loading...</li>
+    </ol>
+</div>
+<script>
+    const rankingList = document.querySelector(".ranking-list");
+
+    fetch("")
+        .then((response) => response.json())
+        .then((data) => {
+            data.forEach((user) => {
+                const playerElement = document.getElementById(`player-${user.id}`);
+                playerElement.textContent = `${user.getUsername} - ${user.points}`;
+            });
+        })
+        .catch((error) => console.error(error));
+</script>
+</body>
+</html>

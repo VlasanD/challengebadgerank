@@ -13,4 +13,4 @@ Tokens can be earned by achieving the first, second, or third place in the chall
 The ranking is based on the highscores.
 
 It is a REST API using Postman to test it, 
-but I have written a HTML/CSS code for further frontend implementation
+but I have written a part of HTML/CSS code for further frontend implementation.

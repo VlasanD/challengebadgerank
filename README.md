@@ -11,3 +11,6 @@ starting from a designated start date and ending on a finish date.
 Users can earn badges upon completing these challenges.
 Tokens can be earned by achieving the first, second, or third place in the challenge.
 The ranking is based on the highscores.
+
+It is a REST API using Postman to test it, 
+but I have written a HTML/CSS code for further frontend implementation
